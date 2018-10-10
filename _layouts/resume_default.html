@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
+<title>{{ site.page_title_about }}</title>
+
+{%- include resume_head.html -%}
+
+<body>
+
+  {%- include resume_header.html -%}
+
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+
+      {%- include resume_about.html -%}
+
+      {%- if site.data.projects.size > 0 -%}
+        {%- include resume_projects.html -%}
+      {%- endif -%}
+
+      {%- if site.data.experience.size > 0 -%}
+        {%- include resume_experience.html -%}
+      {%- endif -%}
+
+      {%- if site.data.education.size > 0 -%}
+        {%- include resume_education.html -%}
+      {%- endif -%}
+
+      {%- include resume_more.html -%}
+
+    </div>
+  </main>
+
+  {%- include resume_footer.html -%}
+
+</body>
+
+</html>

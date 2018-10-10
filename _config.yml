@@ -1,0 +1,129 @@
+# general configuration
+url: https://www.maumau.tokyo
+baseurl: ''
+
+# Site settings
+post_page_title: mauPost
+description:     "maumau"
+post_baseurl:    ""
+post_url:        "/posts"
+about_url:        "/about"
+baseurl:         ""
+
+# Build settings
+include:
+  - _pages
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  # - jemoji #Uncomment this to allow emoji in your post
+
+##########################################
+# compass
+
+# compass configuration
+compass:
+  # an avatar or logo (optional)
+  logo: "/images/mau.png"
+  # author will appear under the avatar (optional)
+  author: "mau"
+  # tagline will appear under the title (optional)
+  tagline: "🍰✨✨"
+  # if include_content is true, the contents of the content.html include will be
+  # added right above the generated item list, if present
+  include_content: true
+  # if include_analytics is true, the content of the analytics.html include will
+  # be added at the end of the <head> section. You can add your Google Analytics
+  # Tracking Code to that file.
+  include_analytics: false
+  # Twitter @username (as defined by the Twitter Card specs)
+  twitter: "@a_maumau_"
+
+# exclude
+exclude: ["CNAME", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+
+# Dependencies
+markdown: kramdown
+highlighter: rouge
+
+# Permalinks
+#permalink: pretty
+
+##########################################
+# posts
+
+# Permalinks
+permalink:     /posts/:year-:month-:day/:title
+paginate:      10
+# it seems top level file (which mean /index.html) only can read this so need to be change
+paginate_path: "posts/page:num"
+
+##########################################
+# resume
+# Site
+repository: a-maumau/a-maumau.github.io #Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
+# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+
+# Personal info
+page_title_about: まうまままままうまううまままうままううまううううまうううまうまうまうううまうまま
+#name: 
+title: まうままううまうまううままままうまうううままううまううままままうまううまうまううまううまうままうままうままままままうままままうままううままままうまううまままうままううままままう 
+#email: 
+#website: 
+
+# Social links
+#twitter_username: jekyllrb
+#github_username:  jekyll
+#dribbble_username: jekyll
+#facebook_username: jekyll
+#flickr_username: jekyll
+#instagram_username: jekyll
+#linkedin_username: jekyll
+#pinterest_username: jekyll
+#youtube_username: jekyll
+#googleplus_username: +jekyll
+
+# About Section
+about_title: まうまままままうまううまままうままううまううううまうううまうまうまうううまうままままうままままままうままううまうまううままうまう
+about_profile_image: "/images/mau.png"
+about_content: | # this will include new lines to allow paragraphs
+  まうままうままうままうままままままううままままうまううまううまうままうままままままううままままうままうままままままうううままううまうううまうまままうううまうまうまううままうまままううままうまうまううまうううままうううまうままままうままままままううままままうまうううまうままままうままままままうううまうまままううまうままままううままうまうままうままままままうまうまうまうまううまうううままううまうままうまうううまううままううままうまうまうううままうままうううままううまううまうままうまうううまうまままううううままうままうままままままううまううううまううままううまままうままままままうまうまうまままううまううううまううまうまううまううううままうまううまううううままうまうううまままうままままままうままうままうまううまうううままうううまうまままううままうまうまうううままうままううままうまうまうううままううまうううまうまままううままうまうまううままうままままうままままままううまうままうまううまうううまままうままままま<mark>まうままううまうまううままままうまううまままううまううまうままままううまうままうまううまうううままううままうまうままうままままままうままううまままううままうまうまううままままうまうううままうままううまうううままううまうままうまううまうううままううままううう</mark>ままうままままままううままままうまううまうううままううままうままままうままままま<mark>まうままままううまううまううううまううまううまうまうううまままままうううまうまうまうううまうまままううままうまうまうううままうまままうままままままうまうまううままううまうままうまうううままううまううまうままうまううまううううまううまうううま</mark>ままうまうううまままうままままままうまままままうまううまううまままうううままううまううまううううままうまううままままうままままままうままままううまううまううううまううまううまうまうううまままままうううまうまうまうううまうまままううままうまうまうううままうまままうままままままうまうままううまううまままううまううまうままうまううままうまうまううまうううままううまままううまううままうまうままうままままままううまうままうまううまうううまままうままままままううままうううまううままうまうまううまうううままううままうまうまうううままうままううままままうまううまううままままうまうううま
+
+  まうままうううままううまううううまうううまうままままうままままままうううまううままううままうまうまうううままうままううううままうままうままままままううままうううまううまううううまううまううううまううままうままままうままままままううままままうまうううまうままままうままままままううままままうまううまうううままううううままうままうままままままううまううううまううままううまままうままままままううまううまままううままままうまううまうううままううままうううまうううまうまうまううままままうまううままうううまううままうまうまうううままううままうまううままままうままままままううまままうままうううまうまうまうううまうままままうままままままうままうままうままうままままままううまままううまううままままうまううまうううまままうままままままうううままうままううままうまうまううままままうまううままうままままうままままままうううまうううまうううままうままううまうままうまうううまうまままううままうまう
+    - まうままうまうままううままままうまうううまままままううままままうまううまうううままううままうまうまうううままううまううままうまう
+    - まうまままうまうまううまうううままううままうううまううまううまままううまうままうまうううままううまううまうままま
+    - まうままままうう
+    - まうままままううままうまうまううままうまうまうう
+    - まうまうまままままううううままうまうううまうまままううまうままままううまううううまううまうううま
+  まううままままうまううまうううままううままうままままうままままままうううままううまううまううううまううまううまうまううままうまうまうううまうまままううまうままうまううまううまうまううままうまうまうううままううままうままままままうままうううままううまうままうまううまううまうままうまままままままうまううまままうままうまうままううままままうまうううまううままううままままうままうまううままままうままままままうままうまうままううままままうまうううまううままううままままうまうまうままううまううまままううまうううままうままううまうままうまうううまままままうううまうままままうまうううま
+  まうままままうままうううまうまうまうううまうままままうままままままうままうままうままうままままままうううままうままううままうまうまううままままうまううまううまままううまううまままううううままうままうままままままううまうままままううままままうまうううまうまままううままうまうままうままままままうままうまうままううままままうまうううまううままううままままうまうまうままううまううまままううまうううままうままううまうままうまうううまままままうううまうままままうまうううま
+  まうまうままうままうううまうまうまうううままううまうううまうままままうままままままううままままうまううまうううままううままうままままうままままままうままうううままううまうままうまううまううまうままうままままままううまうままうまうううままううままうままままままうううまうううまううまうままままううままままうまうううまうままままうままままままうままうままうままうままままままううままままうまううまううまうままうままままままううまううまままううまううううまううまううううまううまうまううまううまうままうまううまうううままううままうううままうままままままううまうううままううままうまうまううううままままうううまうままままうまうううま
+
+# Projects Section
+projects_title: まうまうまままままうううままうままううまううううまううまうまうままううままうまうまううまままううまうううまうまままうううままうう #(Use this to override about projects section title)
+
+# Experience Section
+experience_title: まうまままうまうまううううままままうううまままままううままうまうまうううままうままううまうままうまううままうまうまううまうううままううまままううまううままうまう #(Use this to override about experience section title)
+
+# Education Section
+education_title: まうまままうまうまううままうまままうううまうまうまううまままううまううままままうまうううまうまままううまうままうまううまううううまううまうううま #(Use this to override about education section title)
+
+# More Section
+more_title: まうまままままうままうままままままうままううまままううまうままうまうううまうまままうううまうまままううまううまままううままうまうままうままままままうままううまうまううまううううまうううままうままううままうまうままうままままままうまままままうまううまままうままううまううううまうううまうまうまうううまうままままうままままままうままううまうまううままうまう #(Use this to override about more section title)
+more_content: | # this will include new lines to allow paragraphs
+  まうままうままうままうままままままうううまううままううままうまうまうううままうままううううままうままうままままままううまううまままううまううううまうううまううままううままうまうままうままままままうううままううまうううまうううまううままうまうまううままうまうまうううまうまままうううままううままうまうううま
+
+# Footer
+footer_show_references: False
+
+# Build settings
+# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
+# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
