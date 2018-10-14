@@ -4,6 +4,7 @@ permalink: /posts/
 ---
 
 <div class="catalogue">
+  <h1>{{ site.post_page_title }}</h1>
   {% for post in paginator.posts %}
     <a href="{{ post.url | prepend: site.post_baseurl }}" class="catalogue-item">
       <div>

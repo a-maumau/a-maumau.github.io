@@ -4,6 +4,8 @@
     color: $default-color;
     display: inline-block;
     padding: 2rem 0;
+    overflow-wrap: break-word;
+    width: 80vw;
 
     &:hover .catalogue-line,
     &:focus .catalogue-line {

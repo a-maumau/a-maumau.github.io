@@ -1,0 +1,35 @@
+<!-- calc total page -->
+{% assign total_pages = site.photo_posts.size | divided_by: site.photo_paginate %}{% if site.photo_posts.size | modulo: site.photo_paginate != 0 %}{% assign total_pages = total_pages | plus: 1 %}
+{% endif %}
+
+{% if total_pages > 1 %}
+<div class="pagination">
+  {% if include.this_page_num != 1 %}
+    {% assign prev_page = include.this_page_num | minus: 1 %}
+      {% if prev_page > 1 %}
+        <a  class="ml-1 mr-1" href="{{ site.paginate_path | prepend: site.photo_url | replace: '//', '/' | replace: ':num' , prev_page}}">&laquo;Prev</a>
+      {% else %}
+        <a  class="ml-1 mr-1" href="{{ site.paginate_path | prepend: site.photo_url | replace: '//', '' | replace: 'page:num/' , '' }}">&laquo;Prev</a>
+      {% endif %}
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
+
+  {% for page in (1..total_pages) %}
+    {% if page == include.this_page_num %}
+      <span class="ml-1 mr-1">{{ page }}</span>
+    {% elsif page == 1 %}
+      <a  class="ml-1 mr-1" href="{{ site.paginate_path | prepend: site.photo_url | replace: '//', '' | replace: 'page:num/' , '' }}">{{ page }}</a>
+    {% else %}
+      <a  class="ml-1 mr-1" href="{{ site.paginate_path | prepend: site.photo_url | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if include.this_page_num != total_pages %}
+    {% assign next_page = include.this_page_num | plus: 1 %}
+    <a  class="ml-1 mr-1" href="{{ site.paginate_path | prepend: site.photo_url | replace: '//', '/' | replace: ':num' , next_page}}">Next&raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}

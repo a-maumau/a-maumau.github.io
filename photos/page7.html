@@ -1,0 +1,35 @@
+---
+layout: photo_post_default
+title: Home
+---
+
+<!-- Posts Index
+================================================== -->
+<section class="recent-posts">
+    <div class="section-title">
+        <h2><span>Photo Posts</span></h2>
+    </div>
+    <div class="row listrecent">
+        {% assign page_num = 7 %}
+        {% assign now_page_minus1 = page_num | minus: 1 %}
+        {% assign for_begin = site.paginate | times: now_page_minus1 %}
+        {% assign for_end = site.paginate | times: page_num %}
+        {% assign for_end = for_end | minus: 1 %}
+        {% for index in (for_begin..for_end) %}
+            {% if index >= site.photo_posts.size %}
+                {% break %}
+            {% endif %}
+            {% assign post = site.photo_posts[index] %}
+            {% include photo_post_postbox.html %}
+        {% endfor %}
+    </div>
+</section>
+<!-- Pagination
+================================================== -->
+<div class="bottompagination">
+<div class="pointerup"><i class="fa fa-caret-up"></i></div>
+<span class="navigation" role="navigation">
+    {% include photo_post_pagination.html this_page_num=page_num %}
+</span>
+</div>
+
