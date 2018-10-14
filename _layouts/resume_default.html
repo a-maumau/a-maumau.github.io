@@ -2,6 +2,12 @@
 <html lang="{{ page.lang | default: site.lang | default: " en " }}">
 <title>{{ site.page_title_author }}</title>
 
+<body>
+  {% include navigation.html %}
+
+  {%- include resume_header.html -%}
+
+  {%- include resume_footer.html -%}
 
 </body>
 
