@@ -5,7 +5,7 @@ baseurl: ''
 # Site settings
 post_baseurl:    ""
 post_url:        "/posts"
-about_url:       "/about"
+author_url:      "/author"
 photo_url:       "/photos"
 baseurl:         ""
 
@@ -14,7 +14,7 @@ site_title: maumau
 post_page_title: mauPost
 photo_page_title: "mauPhoto"
 #description: "Jekyll Template for Blogging"
-meta_description: "Jekyll template, Medium styled, free for bloggers."
+#meta_description: "Jekyll template, Medium styled, free for bloggers."
 
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
