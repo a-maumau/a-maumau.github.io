@@ -5,12 +5,12 @@
 {%- include resume_head.html -%}
 
 <body>
+  {% include navigation.html %}
 
   {%- include resume_header.html -%}
 
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
-
       {%- include resume_about.html -%}
 
       {%- if site.data.projects.size > 0 -%}
